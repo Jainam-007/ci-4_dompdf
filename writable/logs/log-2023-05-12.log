@@ -1,0 +1,17 @@
+CRITICAL - 2023-05-12 11:53:06 --> Invalid file: "pdf_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_view', [], true)
+ 3 APPPATH\Controllers\PdfController.php(10): view('pdf_view')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PdfController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Xampp.exe\\htdocs\\PDF_converter\\public\\index.php')
+CRITICAL - 2023-05-12 11:57:39 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\PdfController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Xampp.exe\\htdocs\\PDF_converter\\public\\index.php')
